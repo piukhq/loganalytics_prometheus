@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "loganalytics_prometheus"
+version = "0.0.0"
+description = "Produce Prometheus Metrics based on Log Analytics Table Row Counts"
+authors = ["Chris Pressland <mail@cpressland.io>"]
+readme = "README.md"
+packages = [
+    {include = "loganalytics_prometheus"}
+]
+
+[tool.poetry.scripts]
+loganalytics_prometheus = "loganalytics_prometheus:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+azure-identity = "^1.10.0"
+azure-monitor-query = "^1.0.3"
+pydantic = "^1.10.2"
+prometheus-client = "^0.14.1"
+python-json-logger = "^2.0.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+isort = "^5.10.1"
+Flake8-pyproject = "^1.1.0.post0"
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.flake8]
+max-line-length = 120
+
+[tool.poetry-dynamic-versioning]
+enable = true
