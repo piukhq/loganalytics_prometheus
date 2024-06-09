@@ -15,7 +15,7 @@ loganalytics_prometheus = "loganalytics_prometheus:main"
 python = "^3.10"
 azure-identity = "^1.10.0"
 azure-monitor-query = "^1.0.3"
-pydantic = "^1.10.2"
+pydantic = "^1.10.13"
 prometheus-client = "^0.14.1"
 python-json-logger = "^2.0.4"
 
