@@ -21,7 +21,7 @@ python-json-logger = "^2.0.4"
 
 
 [tool.poetry.group.dev.dependencies]
-black = "^22.8.0"
+black = "^24.3.0"
 isort = "^5.10.1"
 Flake8-pyproject = "^1.1.0.post0"
 
